@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+    HTML> Layout, Headings-Paragraph, Styling, Formatting,
+    Links, Images, Tables, Lists, Videos, Audios
+    Block Level & Inline Elements
+    Div, Span
+    Id, Class
+    Bookmarks
+    Forms
+    Semantics
+-->
+
+<html>
+
+<head>
+    <title> YB - Website </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html, css, js">
+    <meta name="description" content="FrontEnd Dev.">
+    <meta name="author" content="Ümit Dengiz>">
+
+    <style>
+    </style>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:lime;">
+
+    <!--semantics-->
+    <header>
+        <h1>FrontEnd Developer Software</h1>
+        <nav id="topnav">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+    <section id="section-little">
+        <article>Story1</article>
+        <article>Story2</article>
+        <article>Story3</article>
+    </section>
+    <section id="section-big">
+        <article>Story1</article>
+        <article>Story2</article>
+        <article>Story3</article>
+    </section>
+    <aside>
+        <nav id="slidenav"></nav>
+    </aside>
+    <footer>
+        Copyright
+    </footer>
+
+    <!--forms-->
+    <div style="background-color: indianred;">
+        <form>
+            <!--input-->
+            <label for="mail"> E-Mail </label><br>
+            <input type="email" id="mail"><br>
+            <label for="namesurname"> Name-Surname </label><br>
+            <input type="text" id="namesurname"><br>
+            <label for="password"> Password </label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="date"> Date </label><br>
+            <input type="date" id="date" name="date"><br>
+
+            Gender <br>
+            Male
+            <input type="radio" name="gender" value="male">
+            Female
+            <input type="radio" name="gender" value="female">
+            Other
+            <input type="radio" name="gender" value="other" checked><br>
+
+            Hobbies <br>
+            Software
+            <input type="checkbox" name="software" id="tech">
+
+            Music
+            <input type="checkbox" name="music" id="music">
+            Blockchain
+            <input type="checkbox" name="blockchain" id="blockchain"> <br>
+
+            Degree <br>
+            <select name="degree" id="degree">
+                <option value="bachelor">Lisans</option>
+                <option value="msc">Yüksek Lisans</option>
+                <option value="phd">Doktora</option>
+            </select> <br>
+
+            Message <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea><br>
+
+            <button type="reset">Reset</button>
+            <input type="submit" value="Submit & Sent">
+
+        </form>
+    </div>
+    <!--bookmarks-->
+    <div style="background-color:violet;">
+        <ul type="circle">
+            <li><a href="#box1">Box1</a></li>
+            <li><a href="#box2">Box2</a></li>
+            <li><a href="#box3">Box3</a></li>
+        </ul>
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+    </div>
+    <!--id,class-->
+    <div>
+        <div id="navbar" class="navbar-menu"></div>
+        <div id="main"></div>
+        <ul type="none">
+            <li class="article-item"></li>
+        </ul>
+        <div id="footer"></div>
+    </div>
+    <!--videos,audios-->
+    <div style="background-color: orange;">
+        <audio src="./audios/AHMET KAYA - SÖYLE.mp3" controls></audio><br>
+        <video src="./videos/25-Map of Computer Science.mp4" height="300px" controls></video>
+    </div>
+    <!--lists-->
+    <div style="background-color: whitesmoke;">
+        <div style="background-color: gray;">
+            <ul type="circle">
+                <li>Front End</li>
+                <ul>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue</li>
+                </ul>
+                <li>Back End</li>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                </ul>
+            </ul>
+        </div>
+
+        <ol type="I">
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ol>
+    </div>
+    <!--images, links-->
+    <div style="background-color: royalblue;">
+        <a href="file:///D:/%C3%9Cmit%20Dosyalar/Universty/NYYM/Movies%20and%20Series/index.html" target="_blank">
+            <img src="./images/Movies&Series.png" height="200" alt="Movies & Series">
+        </a>
+    </div>
+    <!--tables-->
+    <div style="background-color:aqua;">
+        <table>
+            <thead>
+                <tr>
+                    <th>email</th>
+                    <th>name</th>
+                    <th>surname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ud@icloud.com</td>
+                    <td>Umit</td>
+                    <td>Dengiz</td>
+                </tr>
+                <tr>
+                    <td>yb@gmail.com</td>
+                    <td>Yazılım</td>
+                    <td>Bilimi</td>
+                </tr>
+                <tr>
+                    <td>50160076067@inonu.edu.tr</td>
+                    <td>inonu</td>
+                    <td>universty</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--layout, headings-paragraph, styling, formatting-->
+    <div style="background-color: orangered;">
+        <h1 style="color: teal; font-size: 40px;">h1</h1>
+        <p style="font-size: 25px">
+            <strong>Lorem </strong> ipsum dolor sit amet, <br> <mark> adipisicing </mark> elit. Qui.
+        </p>
+        <h2>h2</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+        </p>
+        <h3>h3</h3>
+        <pre>
+        html    js 
+             css
+    </pre>
+    </div>
+
+</body>
+
+</html>
