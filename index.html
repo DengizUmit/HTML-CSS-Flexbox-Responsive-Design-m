@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-    HTML> Layout, Headings-Paragraph, Styling, Formatting,
+    HTML> Layout, Headings-Paragraph, Styling, Formatting
     Links, Images, Tables, Lists, Videos, Audios
     Block Level & Inline Elements
     Div, Span
@@ -9,6 +9,7 @@
     Forms
     Semantics
 -->
+
 <html>
 
 <head>
@@ -22,26 +23,179 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
 
-    <!--
-        <style>
-        h1 {
-            color: paleturquoise;
-            background-color: red;
-        }
-    </style>
     <style>
+        
         table,
         th,
         td {
-            border: 1px solid black;
+            border: 1px solid red;
             border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+            padding: 10px;
         }
+
+        thead tr {
+            background: forestgreen;
+            color: beige;
+        }
+
+        tbody tr {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        tbody tr:hover {
+            background: #ddd;
+        }
+
+        .Box1 {
+            color: aqua;
+            border-width: 7px;
+            border-color: chartreuse;
+            border-style: solid;
+            width: 870px;
+            height: 720px;
+            background: yellow;
+            overflow: scroll;
+        }
+
+        .Box2 {
+            background-color: gold;
+            width: 870px;
+            height: 360px;
+            background-image: url("images/CheFidel.JPG");
+            background-size: cover;
+
+            color: seagreen;
+        }
+
+        * {
+            margin: 7px;
+            padding: 3px;
+            box-sizing: border-box;
+        }
+
+        .heading1 {
+            text-align: left;
+        }
+
+        .heading2 {
+            text-align: center;
+        }
+
+        .heading3 {
+            text-align: right;
+        }
+
+        div#texts {
+            width: 400px;
+            height: 400px;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        a {
+            font-size: 24px;
+        }
+
+        a:link {
+            color: yellow;
+            font-size: 1.5em;
+            display: inline-block;
+            background: blue;
+            padding: 8px;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: red;
+            background: white;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        a:active {
+            color: white;
+        }
+
+        input {
+            font-size: large;
+            padding: 7px;
+            border-radius: 3px;
+            border: 2px solid white;
+        }
+
+        input-focus {
+            outline: 0;
+            border: 3px solid yellowgreen;
+        }
+
+        .prgrph {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        .prgrph::first-line {
+            color: red;
+        }
+
+        .prgrph::first-letter {
+            color: slateblue;
+            font-size: 36px;
+        }
+
+        header {
+            width: 870px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            position: static;
+            display: flex;
+            background: orangered;
+        }
+
+        h1 {
+            color: paleturquoise;
+            background-color: #000000;
+        }
+
+        p {
+            font: 1em sans-serif;
+            font-size: larger;
+        }
+        .umit{
+            margin-right: 15px;
+            float: left;
+        }
+        .Box{
+            width: 880px;
+            height: 400px;
+            background-color: violet;
+            
+        }
+        #box1, #box2, #box3{
+            background-color: skyblue;
+        }
+
     </style>
-    -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" ; />
 
 </head>
 
-<body style="background-color:lime;">
+<body>
+
+    <i class="fas fa-search"></i>
+    <i class="fas fa-compass"></i>
 
     <!--semantics-->
     <header>
@@ -50,14 +204,44 @@
             <a href="#">Home</a>
             <a href="#">Contact</a>
             <a href="#">About Us</a>
-        </nav>
+            <input type="text" placeholder="Search">
+        </nav><br><br><br>
     </header>
+
+    <img style="width: 300px;" class="umit" src="images/umitDengiz.JPG">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim labore ratione fuga eveniet magni cumque minus
+        obcaecati, distinctio non recusandae qui consequuntur veniam minima fugiat soluta itaque nesciunt beatae ad,
+        molestias nisi quod! Magni, debitis totam nesciunt perferendis corrupti recusandae odio fugiat quos molestias
+        ipsam sequi sapiente, modi quaerat quae commodi eveniet, facilis eaque assumenda voluptate quis. Veritatis
+        mollitia maiores adipisci repellendus, consequuntur quisquam ipsa suscipit aliquid rerum ex ea neque vitae
+        aspernatur voluptatem incidunt tempora temporibus! Dolorum modi officia iure obcaecati inventore molestiae
+        labore iste. Nostrum perspiciatis nesciunt accusamus sapiente corrupti, fugiat enim! Est rerum at fugit quos,
+        dolor similique quidem quas nihil ipsum doloremque doloribus aspernatur ipsa libero a perspiciatis voluptatibus,
+        molestias laboriosam qui suscipit quasi, labore quia provident. Aliquam, nobis. Nihil fuga fugiat esse dolore
+        temporibus, magnam veritatis ratione provident laudantium, delectus, repudiandae consequatur repellendus eos ab.
+        Provident ipsum, aliquid accusantium dolorum odio numquam minus qui delectus est nam eum corrupti aliquam?
+        Accusamus nobis blanditiis quod, sit expedita fuga debitis cumque quibusdam iste architecto, non delectus?
+        Maxime, quas eius! Consequatur dicta nihil repellendus tenetur in, maiores harum ducimus, vel hic assumenda
+        minima perferendis recusandae illo aut? Nihil repellat incidunt, tenetur recusandae delectus earum deserunt
+        architecto error? Hic distinctio, aliquam repellat labore, enim et debitis soluta eos voluptate voluptas quo vel
+        culpa obcaecati illum blanditiis facilis sunt tempora nobis. Incidunt totam ad repellendus maiores odit!
+        Obcaecati eveniet sunt ipsum a veniam aperiam modi aliquid! Similique aliquam corporis distinctio earum dolorem
+        dolorum, accusamus, voluptatum rem quae obcaecati animi perferendis!
+    </p>
+
+    <div class="Box1" style="background-color: lime;">
+        <h2>Freedom</h2>
+        <p class="prgrph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptatibus laudantium
+            modi sit eos, ad corporis. Unde, cum sit? Nesciunt dicta nam harum, fugiat veritatis reiciendis ea neque
+            ipsum aliquam impedit sunt ipsam voluptates odio nulla incidunt in sequi libero? Ab repudiandae aliquid
+            reiciendis impedit quasi eveniet laudantium asperiores vel expedita autem odio consequatur, et officiis
+            explicabo hic? Voluptatibus nam, illo perspiciatis saepe similique exercitationem nostrum amet ad, ullam
+            adipisci molestiae porro odit ratione ex?</p>
+        <div class="Box2" style="color:red;">
+            <p>Che Guevara , Fidel Castro</p>
+        </div>
+    </div>
     <section id="section-little">
-        <article>Story1</article>
-        <article>Story2</article>
-        <article>Story3</article>
-    </section>
-    <section id="section-big">
         <article>Story1</article>
         <article>Story2</article>
         <article>Story3</article>
@@ -65,9 +249,9 @@
     <aside>
         <nav id="slidenav"></nav>
     </aside>
-    <footer>
+    <footer style="color: teal;">
         Copyright
-    </footer>
+    </footer><br>
     <!--forms-->
     <div style="background-color: indianred;">
         <form>
@@ -114,15 +298,15 @@
         </form>
     </div>
     <!--bookmarks-->
-    <div style="background-color:violet;">
+    <div class="Box">
         <ul type="circle">
             <li><a href="#box1">Box1</a></li>
             <li><a href="#box2">Box2</a></li>
             <li><a href="#box3">Box3</a></li>
         </ul>
-        <div id="box1" class="box">Box 1</div>
-        <div id="box2" class="box">Box 2</div>
-        <div id="box3" class="box">Box 3</div>
+        <div id="box1">Box 1</div>
+        <div id="box2">Box 2</div>
+        <div id="box3">Box 3</div>
     </div>
     <!--id,class-->
     <div>
@@ -174,9 +358,9 @@
         <table>
             <thead>
                 <tr>
-                    <th>email</th>
-                    <th>name</th>
-                    <th>surname</th>
+                    <th>E-Mail</th>
+                    <th>NAME</th>
+                    <th>SURNAME</th>
                 </tr>
             </thead>
             <tbody>
@@ -199,20 +383,20 @@
         </table>
     </div>
     <!--layout, headings-paragraph, styling, formatting-->
-    <div style="background-color: orangered;">
-        <h1 style="color: teal; font-size: 40px;">h1</h1>
+    <div class="texts" style="background-color: orangered;">
+        <h1 class="heading1" style="color: orangered; font-size: 40px;">h1</h1>
         <p style="font-size: 25px">
             <strong>Lorem </strong> ipsum dolor sit amet, <br> <mark> adipisicing </mark> elit. Qui.
         </p>
-        <h2>h2</h2>
+        <h2 class="heading2" style="background-color: aquamarine;">h2</h2>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing.
         </p>
-        <h3>h3</h3>
+        <h3 class="heading3" style="background-color: white;">h3</h3>
         <pre>
         html    js 
              css
-    </pre>
+        </pre>
     </div>
 
 </body>

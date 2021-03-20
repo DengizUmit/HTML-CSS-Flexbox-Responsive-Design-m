@@ -1,8 +1,13 @@
 /*
-CSS> Nedir, Kullanımı, Basic Selectors,Çalışma Hiyerarşisi,
-Tools Kullanımı, Colors, Background Colors, Borders, 
-Width Height, Displays, Margin, Padding, Texts, Fonts
+CSS> Nedir, Kullanımı, Basic Selectors,Çalışma Hiyerarşisi
+Tools Kullanımı, Colors, Background Colors, Box Model
+Borders, Width Height, Displays, Margins, Paddings, Texts, Fonts
+icons, PseudoClass, PseudoElements, Nth-Child Selector, Overflow
+Position, Float
+Flexbox
+
 */
+
 h1 {
     color:paleturquoise;
     background-color: red;
